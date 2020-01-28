@@ -4,9 +4,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2020-01-28 Tue 13:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Luke&rsquo;s blog</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -246,38 +247,77 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="index.html"> HOME </a>
 </div><div id="content">
-<h1 class="title">Luke&rsquo;s blog</h1>
-<div id="outline-container-orgb396400" class="outline-2">
-<h2 id="orgb396400">Machine Learning System</h2>
-<div class="outline-text-2" id="text-orgb396400">
-</div>
-<div id="outline-container-orgca05467" class="outline-3">
-<h3 id="orgca05467">Targeting</h3>
-</div>
-<div id="outline-container-orga7db45c" class="outline-3">
-<h3 id="orga7db45c">Data pipeline</h3>
-</div>
-<div id="outline-container-org33ec1d9" class="outline-3">
-<h3 id="org33ec1d9">Modeling</h3>
-</div>
-<div id="outline-container-org67f55d5" class="outline-3">
-<h3 id="org67f55d5">Serving</h3>
-</div>
-</div>
-<div id="outline-container-org96dd8ac" class="outline-2">
-<h2 id="org96dd8ac">Distributed System</h2>
-</div>
-<div id="outline-container-orga42a2aa" class="outline-2">
-<h2 id="orga42a2aa">Data Analysis</h2>
-</div>
-<div id="outline-container-org0edef89" class="outline-2">
-<h2 id="org0edef89">Living Hacks</h2>
-<div class="outline-text-2" id="text-org0edef89">
-<p>
-<a href="cs-how-to.html">CS-HOW-TO</a>
-</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orge38ffee">1. Internet</a>
+<ul>
+<li><a href="#org83efbf2">1.1. How to find your public IP on unix-like system</a></li>
+</ul>
+</li>
+<li><a href="#orgd76ae52">2. Emacs</a>
+<ul>
+<li><a href="#orga2b2e12">2.1. How to insert easy templates</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
+<div id="outline-container-orge38ffee" class="outline-2">
+<h2 id="orge38ffee"><span class="section-number-2">1</span> Internet</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org83efbf2" class="outline-3">
+<h3 id="org83efbf2"><span class="section-number-3">1.1</span> How to find your public IP on unix-like system</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre class="src src-shell">traceroute google.com
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd76ae52" class="outline-2">
+<h2 id="orgd76ae52"><span class="section-number-2">2</span> Emacs</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga2b2e12" class="outline-3">
+<h3 id="orga2b2e12"><span class="section-number-3">2.1</span> How to insert easy templates</h3>
+<div class="outline-text-3" id="text-2-1">
+<pre class="example">
+&lt; s TAB expands to a ‘src’ code block.
+
+&lt; l TAB expands to:
+
+#+BEGIN_EXPORT latex
+
+#+END_EXPORT
+
+Org comes with these pre-defined easy templates:
+
+s	#+BEGIN_SRC ... #+END_SRC
+e	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
+q	#+BEGIN_QUOTE ... #+END_QUOTE
+v	#+BEGIN_VERSE ... #+END_VERSE
+c	#+BEGIN_CENTER ... #+END_CENTER
+C	#+BEGIN_COMMENT ... #+END_COMMENT
+l	#+BEGIN_EXPORT latex ... #+END_EXPORT
+L	#+LATEX:
+h	#+BEGIN_EXPORT html ... #+END_EXPORT
+H	#+HTML:
+a	#+BEGIN_EXPORT ascii ... #+END_EXPORT
+A	#+ASCII:
+i	#+INDEX: line
+I	#+INCLUDE: line
+More templates can added by customizing the variable org-structure-template-alist, whose docstring has additional details.
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2020-01-28 Tue 13:07</p>
 </div>
 </body>
 </html>
